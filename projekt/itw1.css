@@ -1,98 +1,430 @@
-*{
+/**{
   outline:1px solid red ;
+}*/
+body{
+  font-family: Montserrat;
+  font-size: 16px;
+  margin:0;
+  height: 100%;
+}
+html{
+  height: 100%;
+}
+#section-testimonials{
+  font-family: "Crimson Text";
+  background-color:#e4f8f4;
 }
 
-body,html{
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  font-family: Montserrat;
-  color:#868e96;
+h2{
+  font-size: 32px;
+  letter-spacing: 0.2em;
+}
+.dark h2{
+  font-size: 62px;
+  letter-spacing: 0;
+}
+.dark p{
+  color:rgba(255, 255, 255, 0.8);
 }
 p{
   font-size: 16px;
 }
 .btn,a{
   font-size: 13px;
-  letter-spacing: 0.8em;
+  letter-spacing: 0.2em;
 }
-#page-top{ /* pozadie to prve */
-  background: url("img/bg.jpg") no-repeat;
-
+/*************************** NAVBAR **********************************/
+.navbar-nav a img{
+  position: relative;
 }
-/***** NAVBAR ******/
-.navbar-nav a img{ /* logo instant */
+.navbar-nav img{ /* logo instant */
+  position: absolute;
+  top:10px;
   width: 100px;
   margin-top: -6px;
+  padding: 0px;
+}
+
+#navbar{ /*toto je horizontalne zarovnanie na stred*/
+  display: flex;
+  justify-content: center;
 }
 
 #navbar ul{
   list-style-type: none;
   margin : 0;
-  padding: 0 100px;
   display: block;
-  overflow: hidden;
 }
 
 #navbar li{
-  /*display: inline-block;*/
-  float: left;
+  display: inline-block;
+  /*float: left;*/
 }
 
 #navbar li a {
   text-decoration: none;
-  color: white;
   text-transform: uppercase;
   text-align: center;
-  display: block; /* urobi z inline elementu block element*/
-  padding: 13px;
   font-size: 13px;
-  letter-spacing: 0.8em;
+  letter-spacing: 0.2em;
+  color: white;
+  display: block; /* urobi z inline elementu block element*/
+  padding: 10px;
 }
 
 #navbar li a:hover{
   cursor: pointer;
   border: 1px solid white;
 }
-
+/**************** NAVBAR KONIEC *****************************/
 #main{
+  /*max-width: 1140px; alebo to ma ist na class = content */
+  /*max-width: 1140px;
   width: auto;
-  margin: 15px auto;
+  margin: 0 auto;
+  padding: 0 15px;*/
+  background: url("img/bg.jpg") no-repeat;
+  background-size: 100% 95%;
+  background-position: top center;
+  background-attachment: scroll;
+  height: 95%;
+}
+.content{
   max-width: 1140px;
-
+  width: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-
-
-.dark h1{
-  color: #ffffff;
+/**** SECITON HOME **********/
+#section-home h1{
+  margin-bottom: 0;
   font-size: 62px;
-  margin:0;
-  padding-top: 350px;
+  color: #ffffff;
   text-align: center;
 }
-.sub-heading{
-  color:rgba(255, 255, 255, 0.8);
+
+#section-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+p.sub-heading{
   text-align: center;
-  padding: 0 320px;
-  padding-bottom: 30px;
+  padding: 0 23%; /*320px*/
 }
 .content p a{
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
 }
-.btn{
-  color :white;
-  font-size: 20px;
-  border: 1px solid white;
-  padding: 10px;
+.dark .btn{
+  border: 0.2px solid rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 0.8em;
-  text-align: center;
-  margin: 10px 400px;
+  display: table; /* toto je zarovnanie na stred pre inline element*/
+  margin: auto; /* aj toto ktomu patri*/
+  padding: 10px;
+  color:rgba(255, 255, 255, 0.8);
 }
-.btn:hover{
+.dark .btn:hover{
  background: white;
- color:black;
+ color:#005dd0;
+}
+/************* SECTION HOME KONIEC*********/
+
+
+/********* SECTION ABOUT *****************/
+
+/*z tych obrazkov som spravil inline element aby som mohol spravit dva stlpce */
+#section-about .photos p{
+  display: inline;
+}
+/* vlastnosti obrazka */
+#section-about .img-fluid{
+  height: 370px;
+  margin:15px;
+  width: 45%;
+}
+/* stlce fotky */
+#section-about .photos{
+  float: left;
+  width: 66%;
+
+}
+/* stlpec text */
+#section-about .descript{
+  float: left;
+  width: 33.33%;
+  min-width: 350px;
+  height: 500px;
+}
+#section-about .content:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+#section-about{
+  color: #868e96;
+}
+.descript h2{
+  text-transform: uppercase;
+  color:#212529;
+  padding: 0 30px;
+  font-size: 32px;
+  letter-spacing: 0.2em;
+}
+.descript p{
+  padding: 0 30px;
+  padding-top:0;
+  padding-bottom: 10px;
+  color: #868e96;
+}
+.linkdown{
+  color:#ee0427;
+}
+/********* SECTION ABOUT KONIEC *****************/
+
+/********* SECTION MENU ************************/
+#section-menu p{
+  color: #868e96;
+}
+#section-menu h2{
+  text-transform: uppercase;
+  text-align: center;
+  color:#212529;
+  padding-bottom: 30px;
+}
+ul.tabs{
+  display: flex;
+  justify-content: center;
+}
+#section-menu ul.tabs li{
+  display: inline-block;
+  margin:10px;
+}
+#section-menu .btn{
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: #868e96;
+  padding: 10px;
+  display: block;
+}
+#section-menu .active{
+  cursor: pointer;
+  color:#212529;
+  border: 1px solid black;
+}
+
+.menucols ul{
+  list-style-type: none;
+  display: inline-block;
+  padding:0;
+
+}
+.menuitem h3{
+  margin-top:0;
+  margin-bottom: 10;
+}
+.menuitem p{
+  margin-bottom: 25px;
+}
+.menucols .price{
+  float: right;
+  padding-right: 25px;
+}
+.menucols .menuitem{
+  float: left;
+}
+.menucols ul:first-child{
+  min-width: 500px;
+  width: 50%;
+  float: left;
+}
+.menucols ul:last-child{
+  min-width: 500px;
+  width: 50%;
+  float: left;
+}
+.menucols::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/********* SECTION MENU KONIEC ************************/
+/******** SECTION DARK Delicious & Nutritious *******/
+.dark{
+  background: url("img/bg.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark h2{
+  color: #ffffff;
+  margin-bottom:0;
+  text-align: center;
+  font-size: 62px;
+}
+.dark .content{
+  height: 400px;
+}
+/******** SECTION DARK Delicious & Nutritious KONIEC *******/
+/******** SECTION GALLERY *****************/
+#section-gallery .photos p{
+  display: inline-block;
+
+}
+/* vlastnosti obrazka */
+#section-gallery .img-fluid{
+  height: 370px;
+  margin:15px;
+  width: auto;
+
+}
+#section-gallery .photos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-gallery h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 0.2em;
+  color:#212529;
+}
+/* SECTION testimonial WHAT PEOPE SAY*/
+.rounded-circle{
+  border-radius: 50%;
+  height: 70px;
+
+}
+img.rounded-circle{
+  display: table; /* toto je zarovnanie na stred pre inline element*/
+  margin: auto;
+}
+#section-testimonials:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.testimonial{
+  float: left;
+  width: 33%;
+}
+.testimonial blockquote::before{
+  content: '“';
+  display: block;
+  text-align: center;
+  font-size: 55px;
+  font-style: italic;
+  color:black;
+}
+#section-testimonials h2{
+  text-align: center;
+  color:#212529;
+  text-transform: uppercase;
+}
+.testimonial blockquote{
+  text-align: center;
+  color:#212529;
+}
+.testimonial .name{
+  text-align: center;
+}
+.testimonial .nick{
+  text-align: center;
+  color:rgba(0, 0, 0, 0.4);
+}
+/* KONIEC SECTION testimonial WHAT PEOPE SAY*/
+#section-events h2{
+  text-transform: uppercase;
+  text-align: center;
+  color:#212529;
+}
+#section-events .card-img-top{
+  height: 180px;
+  width: 100%;
+  display: table;
+  margin: auto;
+  padding-bottom: 40px;
+}
+/*#section-events{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+/*#section-events .card{
+  float: left;
+  width: 33%;
+  min-width: 350px;
+  margin-left: 0;
+  background-color: white;
+}
+#section-events .content:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+#section-events h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+#section-events h4{
+  margin-top: 0;
+}*/
+
+
+/*#section-events .card-deck{
+  column-count: 3;
+  column-gap: 40px;
+  column-width: 33%;
+  column-rule-color: white;
+
+}*/
+
+
+#section-events .card-body{
+  padding: 0 10px;
+}
+#section-events .card-body p{
+  margin-top: 5px;
+}
+#section-events .card{
+  margin:15px;
+  float: left;
+  min-width: 350px;
+  width: 29%;
+  height:600px;
+}
+#section-events .content{
+  color:#868e96;
+}
+#section-events .card-deck{
+  content: "";
+   display: table;
+   clear: both;
+}
+#section-events .card-body small{
+  text-transform: uppercase;
+}
+#section-events .card-body a{
+  color:#ee0427;
+  text-decoration: none;
+}
+#section-events .card-body h4{
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+/******* footer ********/
+#footer p{
+  text-align: center;
+  color:#868e96;
+}
+#footer a{
+  color: black;
 }
