@@ -13,6 +13,7 @@ html{
 #section-testimonials{
   font-family: "Crimson Text";
   background-color:#e4f8f4;
+  padding:110px 0;
 }
 
 h2{
@@ -163,6 +164,7 @@ p.sub-heading{
 }
 #section-about{
   color: #868e96;
+  padding-top:110px;
 }
 .descript h2{
   text-transform: uppercase;
@@ -183,6 +185,9 @@ p.sub-heading{
 /********* SECTION ABOUT KONIEC *****************/
 
 /********* SECTION MENU ************************/
+#section-menu{
+  padding-bottom: 110px;
+}
 #section-menu p{
   color: #868e96;
 }
@@ -273,6 +278,9 @@ ul.tabs{
 }
 /******** SECTION DARK Delicious & Nutritious KONIEC *******/
 /******** SECTION GALLERY *****************/
+#section-gallery{
+  padding: 110px 0;
+}
 #section-gallery .photos p{
   display: inline-block;
 
@@ -317,27 +325,34 @@ img.rounded-circle{
 }
 .testimonial blockquote::before{
   content: '“';
+  top:10px;
   display: block;
   text-align: center;
-  font-size: 55px;
+  font-size: 85px;
   font-style: italic;
   color:black;
+  line-height: 0;
 }
 #section-testimonials h2{
   text-align: center;
   color:#212529;
   text-transform: uppercase;
+  padding-bottom: 60px;
 }
 .testimonial blockquote{
   text-align: center;
   color:#212529;
+  padding: 0 8px;
+  padding-bottom: 15px;
 }
 .testimonial .name{
   text-align: center;
+  margin-bottom: 0;
 }
 .testimonial .nick{
   text-align: center;
   color:rgba(0, 0, 0, 0.4);
+  margin-top: 0;
 }
 /* KONIEC SECTION testimonial WHAT PEOPE SAY*/
 #section-events h2{
@@ -386,9 +401,14 @@ img.rounded-circle{
 
 }*/
 
+#section-events{
+  padding: 110px 0;
 
+}
 #section-events .card-body{
-  padding: 0 10px;
+  padding: 0 45px;
+  background-color: white;
+  height: 380px;
 }
 #section-events .card-body p{
   margin-top: 5px;
@@ -414,10 +434,12 @@ img.rounded-circle{
 #section-events .card-body a{
   color:#ee0427;
   text-decoration: none;
+  font-size: 16px;
 }
 #section-events .card-body h4{
   margin-top: 0;
   margin-bottom: 0;
+
 
 }
 /******* footer ********/
@@ -427,4 +449,7 @@ img.rounded-circle{
 }
 #footer a{
   color: black;
+}
+#footer{
+  padding: 110px 0;
 }
