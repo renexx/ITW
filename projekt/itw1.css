@@ -1,13 +1,20 @@
 /**{
   outline:1px solid red ;
 }*/
+*{
+  font-weight: 300;
+}
 body{
   font-family: Montserrat;
   font-size: 16px;
   margin:0;
   height: 100%;
+  min-width: 850px;
+
 }
+
 html{
+
   height: 100%;
 }
 #section-testimonials{
@@ -19,6 +26,7 @@ html{
 h2{
   font-size: 32px;
   letter-spacing: 0.2em;
+  font-weight: 300;
 }
 .dark h2{
   font-size: 62px;
@@ -75,7 +83,7 @@ p{
 
 #navbar li a:hover{
   cursor: pointer;
-  border: 1px solid white;
+
 }
 /**************** NAVBAR KONIEC *****************************/
 #main{
@@ -89,7 +97,9 @@ p{
   background-position: top center;
   background-attachment: scroll;
   height: 95%;
+
 }
+
 .content{
   max-width: 1140px;
   width: auto;
@@ -125,10 +135,13 @@ p.sub-heading{
   padding: 10px;
   color:rgba(255, 255, 255, 0.8);
 }
-.dark .btn:hover{
+#section-home .btn:hover{
  background: white;
- color:#005dd0;
+ cursor: url("img/blackpointer.png"),auto;
+ color:rgba(0,0,0,0.8);
+
 }
+
 /************* SECTION HOME KONIEC*********/
 
 
@@ -136,13 +149,13 @@ p.sub-heading{
 
 /*z tych obrazkov som spravil inline element aby som mohol spravit dva stlpce */
 #section-about .photos p{
-  display: inline;
+  display: inline-block;
 }
 /* vlastnosti obrazka */
 #section-about .img-fluid{
-  height: 370px;
+  height: 415px;
   margin:15px;
-  width: 45%;
+  width: 340px;
 }
 /* stlce fotky */
 #section-about .photos{
@@ -165,6 +178,7 @@ p.sub-heading{
 #section-about{
   color: #868e96;
   padding-top:110px;
+  padding-bottom: 230px;
 }
 .descript h2{
   text-transform: uppercase;
@@ -178,15 +192,19 @@ p.sub-heading{
   padding-top:0;
   padding-bottom: 10px;
   color: #868e96;
+
 }
 .linkdown{
   color:#ee0427;
+}
+a.linkdown:hover{
+  color:#005dd0;
 }
 /********* SECTION ABOUT KONIEC *****************/
 
 /********* SECTION MENU ************************/
 #section-menu{
-  padding-bottom: 110px;
+  padding-bottom: 130px;
 }
 #section-menu p{
   color: #868e96;
@@ -200,6 +218,7 @@ p.sub-heading{
 ul.tabs{
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 #section-menu ul.tabs li{
   display: inline-block;
@@ -212,8 +231,12 @@ ul.tabs{
   font-size: 13px;
   letter-spacing: 0.2em;
   color: #868e96;
-  padding: 10px;
+  padding: 20px;
   display: block;
+  border: 0.1px solid lightgrey;
+}
+#section-menu .btn:hover{
+  color:#005dd0;
 }
 #section-menu .active{
   cursor: pointer;
@@ -267,6 +290,9 @@ ul.tabs{
   justify-content: center;
   align-items: center;
 }
+#section-home.dark{
+  background-image: none;
+}
 .dark h2{
   color: #ffffff;
   margin-bottom:0;
@@ -287,9 +313,9 @@ ul.tabs{
 }
 /* vlastnosti obrazka */
 #section-gallery .img-fluid{
-  height: 370px;
+  height: 415px;
   margin:15px;
-  width: auto;
+  width: 340px;
 
 }
 #section-gallery .photos{
@@ -337,7 +363,8 @@ img.rounded-circle{
   text-align: center;
   color:#212529;
   text-transform: uppercase;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+  font-weight: 300;
 }
 .testimonial blockquote{
   text-align: center;
@@ -402,28 +429,33 @@ img.rounded-circle{
 }*/
 
 #section-events{
-  padding: 110px 0;
-
+  padding: 120px 0;
+  background-color: #f8f9fa;
 }
 #section-events .card-body{
   padding: 0 45px;
-  background-color: white;
   height: 380px;
+}
+#section-events .card-img-top{
+  width: 350px;
+  height: 220px;
 }
 #section-events .card-body p{
   margin-top: 5px;
+  line-height: 1.8;
 }
 #section-events .card{
   margin:15px;
   float: left;
   min-width: 350px;
-  width: 29%;
-  height:600px;
+  width: 350px;
+  height:540px;
+  background-color: white;
 }
 #section-events .content{
   color:#868e96;
 }
-#section-events .card-deck{
+#section-events .card-deck:after{
   content: "";
    display: table;
    clear: both;
@@ -434,7 +466,11 @@ img.rounded-circle{
 #section-events .card-body a{
   color:#ee0427;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: normal;
+}
+#section-events .card-body a:hover{
+  color:#005dd0;
 }
 #section-events .card-body h4{
   margin-top: 0;
@@ -450,6 +486,10 @@ img.rounded-circle{
 #footer a{
   color: black;
 }
+#footer a:hover{
+  color:#005dd0;
+}
 #footer{
   padding: 110px 0;
+  background-color: #f8f9fa;
 }
