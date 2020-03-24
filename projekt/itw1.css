@@ -123,6 +123,9 @@ p{
 p.sub-heading{
   text-align: center;
   padding: 0 23%; /*320px*/
+  line-height: 1.9;
+  padding-bottom: 30px;
+  margin-top: 0;
 }
 .content p a{
   text-decoration: none;
@@ -298,6 +301,7 @@ ul.tabs{
   margin-bottom:0;
   text-align: center;
   font-size: 62px;
+  padding-bottom: 10px;
 }
 .dark .content{
   height: 400px;
@@ -369,7 +373,7 @@ img.rounded-circle{
 .testimonial blockquote{
   text-align: center;
   color:#212529;
-  padding: 0 8px;
+  padding: 0 15px;
   padding-bottom: 15px;
 }
 .testimonial .name{
@@ -467,7 +471,7 @@ img.rounded-circle{
   color:#ee0427;
   text-decoration: none;
   font-size: 20px;
-  font-weight: normal;
+
 }
 #section-events .card-body a:hover{
   color:#005dd0;
