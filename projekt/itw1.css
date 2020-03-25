@@ -1,6 +1,8 @@
-/**{
-  outline:1px solid red ;
-}*/
+/*
+  author: Rene Bolf
+  login : xbolfr00@vutbr.cz
+  Project: ITW - tvorba webových stránok Projekt 1
+*/
 *{
   font-weight: 300;
 }
@@ -10,13 +12,12 @@ body{
   margin:0;
   height: 100%;
   min-width: 850px;
-
 }
 
 html{
-
   height: 100%;
 }
+
 #section-testimonials{
   font-family: "Crimson Text";
   background-color:#e4f8f4;
@@ -28,16 +29,20 @@ h2{
   letter-spacing: 0.2em;
   font-weight: 300;
 }
+
 .dark h2{
   font-size: 62px;
   letter-spacing: 0;
 }
+
 .dark p{
   color:rgba(255, 255, 255, 0.8);
 }
+
 p{
   font-size: 16px;
 }
+
 .btn,a{
   font-size: 13px;
   letter-spacing: 0.2em;
@@ -46,6 +51,7 @@ p{
 .navbar-nav a img{
   position: relative;
 }
+
 .navbar-nav img{ /* logo instant */
   position: absolute;
   top:10px;
@@ -83,7 +89,6 @@ p{
 
 #navbar li a:hover{
   cursor: pointer;
-
 }
 /**************** NAVBAR KONIEC *****************************/
 #main{
@@ -97,7 +102,6 @@ p{
   background-position: top center;
   background-attachment: scroll;
   height: 95%;
-
 }
 
 .content{
@@ -120,6 +124,7 @@ p{
   justify-content: center;
   height: 100%;
 }
+
 p.sub-heading{
   text-align: center;
   padding: 0 23%; /*320px*/
@@ -127,9 +132,11 @@ p.sub-heading{
   padding-bottom: 30px;
   margin-top: 0;
 }
+
 .content p a{
   text-decoration: none;
 }
+
 .dark .btn{
   border: 0.2px solid rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
@@ -138,13 +145,13 @@ p.sub-heading{
   padding: 10px;
   color:rgba(255, 255, 255, 0.8);
 }
+
 #section-home .btn:hover{
  background: white;
  cursor: url("img/blackpointer.png"),auto;
  color:rgba(0,0,0,0.8);
 
 }
-
 /************* SECTION HOME KONIEC*********/
 
 
@@ -154,17 +161,19 @@ p.sub-heading{
 #section-about .photos p{
   display: inline-block;
 }
+
 /* vlastnosti obrazka */
 #section-about .img-fluid{
   height: 415px;
   margin:15px;
   width: 340px;
 }
+
 /* stlce fotky */
 #section-about .photos{
   float: left;
-  width: 66%;
-
+  /*width: 66%;*/
+  min-width: 350px;
 }
 /* stlpec text */
 #section-about .descript{
@@ -173,16 +182,19 @@ p.sub-heading{
   min-width: 350px;
   height: 500px;
 }
+
 #section-about .content:after{
   content: "";
   display: table;
   clear: both;
 }
+
 #section-about{
   color: #868e96;
   padding-top:110px;
   padding-bottom: 230px;
 }
+
 .descript h2{
   text-transform: uppercase;
   color:#212529;
@@ -190,16 +202,19 @@ p.sub-heading{
   font-size: 32px;
   letter-spacing: 0.2em;
 }
+
 .descript p{
   padding: 0 30px;
   padding-top:0;
   padding-bottom: 10px;
   color: #868e96;
-
+  line-height: 27px;
 }
+
 .linkdown{
   color:#ee0427;
 }
+
 a.linkdown:hover{
   color:#005dd0;
 }
@@ -209,24 +224,29 @@ a.linkdown:hover{
 #section-menu{
   padding-bottom: 130px;
 }
+
 #section-menu p{
   color: #868e96;
 }
+
 #section-menu h2{
   text-transform: uppercase;
   text-align: center;
   color:#212529;
   padding-bottom: 30px;
 }
+
 ul.tabs{
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
+
 #section-menu ul.tabs li{
   display: inline-block;
   margin:10px;
 }
+
 #section-menu .btn{
   text-decoration: none;
   text-transform: uppercase;
@@ -238,9 +258,11 @@ ul.tabs{
   display: block;
   border: 0.1px solid lightgrey;
 }
+
 #section-menu .btn:hover{
   color:#005dd0;
 }
+
 #section-menu .active{
   cursor: pointer;
   color:#212529;
@@ -251,32 +273,38 @@ ul.tabs{
   list-style-type: none;
   display: inline-block;
   padding:0;
-
 }
+
 .menuitem h3{
   margin-top:0;
   margin-bottom: 10;
 }
+
 .menuitem p{
   margin-bottom: 25px;
 }
+
 .menucols .price{
   float: right;
   padding-right: 25px;
 }
+
 .menucols .menuitem{
   float: left;
 }
+
 .menucols ul:first-child{
   min-width: 500px;
   width: 50%;
   float: left;
 }
+
 .menucols ul:last-child{
   min-width: 500px;
   width: 50%;
   float: left;
 }
+
 .menucols::after{
   content: "";
   display: table;
@@ -288,14 +316,16 @@ ul.tabs{
 .dark{
   background: url("img/bg.jpg") no-repeat;
   background-size: cover;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #section-home.dark{
   background-image: none;
 }
+
 .dark h2{
   color: #ffffff;
   margin-bottom:0;
@@ -303,6 +333,7 @@ ul.tabs{
   font-size: 62px;
   padding-bottom: 10px;
 }
+
 .dark .content{
   height: 400px;
 }
@@ -311,22 +342,23 @@ ul.tabs{
 #section-gallery{
   padding: 110px 0;
 }
+
 #section-gallery .photos p{
   display: inline-block;
-
 }
 /* vlastnosti obrazka */
 #section-gallery .img-fluid{
   height: 415px;
   margin:15px;
   width: 340px;
-
 }
+
 #section-gallery .photos{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #section-gallery h2{
   text-align: center;
   text-transform: uppercase;
@@ -338,7 +370,6 @@ ul.tabs{
 .rounded-circle{
   border-radius: 50%;
   height: 70px;
-
 }
 img.rounded-circle{
   display: table; /* toto je zarovnanie na stred pre inline element*/
@@ -349,10 +380,12 @@ img.rounded-circle{
   display: table;
   clear: both;
 }
+
 .testimonial{
   float: left;
   width: 33%;
 }
+
 .testimonial blockquote::before{
   content: '“';
   top:10px;
@@ -363,6 +396,7 @@ img.rounded-circle{
   color:black;
   line-height: 0;
 }
+
 #section-testimonials h2{
   text-align: center;
   color:#212529;
@@ -370,27 +404,33 @@ img.rounded-circle{
   padding-bottom: 80px;
   font-weight: 300;
 }
+
 .testimonial blockquote{
   text-align: center;
   color:#212529;
   padding: 0 15px;
   padding-bottom: 15px;
+  line-height: 1.6;
 }
+
 .testimonial .name{
   text-align: center;
   margin-bottom: 0;
 }
+
 .testimonial .nick{
   text-align: center;
   color:rgba(0, 0, 0, 0.4);
   margin-top: 0;
 }
+
 /* KONIEC SECTION testimonial WHAT PEOPE SAY*/
 #section-events h2{
   text-transform: uppercase;
   text-align: center;
   color:#212529;
 }
+
 #section-events .card-img-top{
   height: 180px;
   width: 100%;
@@ -398,56 +438,26 @@ img.rounded-circle{
   margin: auto;
   padding-bottom: 40px;
 }
-/*#section-events{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-/*#section-events .card{
-  float: left;
-  width: 33%;
-  min-width: 350px;
-  margin-left: 0;
-  background-color: white;
-}
-#section-events .content:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-#section-events h2{
-  text-align: center;
-  text-transform: uppercase;
-}
-#section-events h4{
-  margin-top: 0;
-}*/
-
-
-/*#section-events .card-deck{
-  column-count: 3;
-  column-gap: 40px;
-  column-width: 33%;
-  column-rule-color: white;
-
-}*/
 
 #section-events{
   padding: 120px 0;
   background-color: #f8f9fa;
 }
+
 #section-events .card-body{
   padding: 0 45px;
-  height: 380px;
 }
+
 #section-events .card-img-top{
   width: 350px;
   height: 220px;
 }
+
 #section-events .card-body p{
   margin-top: 5px;
   line-height: 1.8;
 }
+
 #section-events .card{
   margin:15px;
   float: left;
@@ -456,43 +466,49 @@ img.rounded-circle{
   height:540px;
   background-color: white;
 }
+
 #section-events .content{
   color:#868e96;
 }
+
 #section-events .card-deck:after{
   content: "";
-   display: table;
-   clear: both;
+  display: table;
+  clear: both;
 }
+
 #section-events .card-body small{
   text-transform: uppercase;
 }
+
 #section-events .card-body a{
   color:#ee0427;
   text-decoration: none;
   font-size: 20px;
-
 }
+
 #section-events .card-body a:hover{
   color:#005dd0;
 }
+
 #section-events .card-body h4{
   margin-top: 0;
   margin-bottom: 0;
-
-
 }
 /******* footer ********/
 #footer p{
   text-align: center;
   color:#868e96;
 }
+
 #footer a{
   color: black;
 }
+
 #footer a:hover{
   color:#005dd0;
 }
+
 #footer{
   padding: 110px 0;
   background-color: #f8f9fa;
