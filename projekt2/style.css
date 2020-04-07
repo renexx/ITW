@@ -37,9 +37,19 @@ article,header,nav,aside,footer{
   border-radius: .5em;
   margin: 5px;
 }
+.omne{
+  color:black;
+}
+.clients{
+  color:white;
+}
 
 header{ background: #3b9ae1; }
-nav { background: #f6be00;}
+nav {
+   background: #f6be00;
+
+
+}
 article { background: #e64134;}
 aside { background: #eb70b1;}
 footer { background: #0f1a5f;}
@@ -52,6 +62,7 @@ main > *{
   flex:1;
 }
 nav{
+  position: fixed;;
   order:1;
 }
 article{
