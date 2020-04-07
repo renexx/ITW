@@ -12,8 +12,9 @@
 *,*:before,*:after{
   box-sizing: inherit;
 }
-html,body{
+html{
   height: 100%;
+  width: 100%;
 }
 
 body{
@@ -22,6 +23,26 @@ body{
   font-weight: bold;
   background: #f7f6d3;
   padding:1em;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "hd hd"
+                       "sidebar main"
+                       "footer footer";
+}
+header{
+  grid-area: hd;
+}
+aside{
+  grid-area: sidebar;
+  height: 100vh;
+
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
 }
 body,a{
   color:#fff;
@@ -31,54 +52,31 @@ ul{
   list-style: none;
   padding-left: 0;
 }
-article,header,nav,aside,footer{
+article,header,aside,footer{
   padding: 1.2em;
   background: #3b9ae1;
   border-radius: .5em;
   margin: 5px;
 }
-.omne{
-  color:black;
-}
-.clients{
-  color:white;
-}
 
-header{ background: #3b9ae1; }
-nav {
-   background: #f6be00;
-
-
-}
 article { background: #e64134;}
 aside { background: #eb70b1;}
 footer { background: #0f1a5f;}
 
-main{
-  display: flex;
-  flex-flow: row wrap;
-}
-main > *{
-  flex:1;
-}
-nav{
-  position: fixed;;
-  order:1;
-}
-article{
-  order:2;
-  flex: 3;
-}
-aside{
-  order:3;
-}
+
 @media (max-width:800px){
-  article {order:1; flex:1 100%;}
-  nav{order:2;}
-  aside{order:3;}
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "hd hd"
+                         "sidebar sidebar"
+                         "main main"
+                         "footer footer";
+  }
 }
 
-@media (max-width:600px){
-  nav,aside {order:1; flex:1 100%;}
+
+
 
 }
