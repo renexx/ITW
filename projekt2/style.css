@@ -3,7 +3,9 @@
   --pozadie: #ddd;
   --pismo : #111;
 }
-
+*{
+  outline:3px solid black ;
+}
 *{
   margin: 0;
   padding: 0;
@@ -12,71 +14,129 @@
 *,*:before,*:after{
   box-sizing: inherit;
 }
-html{
+html,body{
   height: 100%;
-  width: 100%;
+  margin:0;
 }
 
 body{
-  color:#fff;
+  color:black;
   font: 20px Montserrat, Georgia, serif;
   font-weight: bold;
-  background: #f7f6d3;
-  padding:1em;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "hd hd"
-                       "sidebar main"
-                       "footer footer";
 }
-header{
-  grid-area: hd;
-}
-aside{
-  grid-area: sidebar;
-  height: 100vh;
-
-}
-main{
-  grid-area: main;
-}
-footer{
-  grid-area: footer;
-}
-body,a{
+a{
   color:#fff;
-
 }
 ul{
   list-style: none;
   padding-left: 0;
 }
-article,header,aside,footer{
+article,header,nav,aside,footer{
   padding: 1.2em;
-  background: #3b9ae1;
-  border-radius: .5em;
-  margin: 5px;
 }
 
-article { background: #e64134;}
-aside { background: #eb70b1;}
-footer { background: #0f1a5f;}
+main{
+  display: flex;
+  flex-flow: row wrap;
 
+  height: 100%;
+  width: 100%;
+}
 
+article{
+  max-width: 1140px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+main > *{
+  flex:1;
+}
+nav{
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+
+  padding-top: 20px;
+  order:1;
+}
+article{
+  order:2;
+  flex: 3;
+}
+.about{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.nwm{
+
+  height: 100%;
+}
+#about span{
+  color:red;
+  font-style: italic;
+
+}
+
+#about{
+
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+}
+#about h1{
+  margin-bottom: 0;
+  font-size: 82px;
+  color:black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#about h2{
+  color:black;
+}
+#about p{
+  color:black;
+}
+#about ul{
+  display: flex;
+
+}
+#about ul li{
+  margin: 0 10px;
+}
+.nieco ul{
+  color:black;
+}
+ ul.nieco a{
+  color:black;
+}
+footer{
+  background-color: red;
+
+}
+.experience{
+
+  height: 100%;
+}
 @media (max-width:800px){
-  body{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "hd hd"
-                         "sidebar sidebar"
-                         "main main"
-                         "footer footer";
-  }
+  article {order:1; flex:1 100%;}
+  nav{order:2;}
+
 }
+pexels
 
-
-
+@media (max-width:600px){
+  nav {order:1; flex:1 100%;}
 
 }
