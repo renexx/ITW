@@ -10,11 +10,8 @@ html,body{
 }
 html{
     box-sizing: border-box;
-  
 }
 body{
-   
-  
 }
 .wrapper{
     display: grid;
@@ -34,23 +31,22 @@ a{
 }
 /* Navigation*/
 .main-nav ul{
-    list-style: none;
     display:flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    list-style: none;
     background-color: #262b37;
     /*  background-color: #6b6c6e;*/
     height: 3em;
-    
+    margin: 0;
+    padding: 0;
 }
 .main-nav{
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 20;
+    z-index: 999;
 }
 .main-nav .selected a {
     color:white;
@@ -60,9 +56,9 @@ a{
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.2em;
+    line-height: 18px;
     color:#c3c8d6;
     padding: 10px;
-    line-height: 18px;
 }
 .main-nav a:hover{
     cursor: pointer;
@@ -70,15 +66,19 @@ a{
 }
 
 /* HEADER background*/
-header{
+#cover{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/background.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url("img/cover-1.jpg");
     background-size: 100% 100%;
     background-position: top center;
     background-attachment: fixed;
     height: 100vh;
     box-shadow: darkgrey;
     background-repeat: no-repeat;
+    /*background-color: #262b37;*/
 }   
+
+
 /* BANNER TEXT*/
 .bannerText h1{
     margin-bottom: 0;
@@ -113,7 +113,6 @@ header{
 .aboutme-container .heading{
     text-align: center;
     grid-area: about;
-    
 }
 .aboutme-container h2{
     margin-bottom: 0;
@@ -127,11 +126,11 @@ header{
 .aboutme-container .content{
     display: grid;
     gap:20px;
-    
-    grid-template-areas: 
+
+    grid-template-areas:
     "about about about"
     "textabout textabout fotka"
-    "textabout textabout fotka";   
+    "textabout textabout fotka";
 }
 .aboutme-container{
     background-color:#D9D9D9;
@@ -148,7 +147,6 @@ header{
 .img-fluid{
     width:auto;
     height: 330px;
-    
 }
 .bntDownload{
     font-size: 16px;
@@ -162,7 +160,7 @@ header{
 }
 a.bntDownload{
     text-decoration: none;
-    color:white;  
+    color:white;
 }
 a.bntDownload:hover{
     color:#c3c8d6;
@@ -197,7 +195,7 @@ a.bntDownload:hover{
     display: grid;
     gap:20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-     
+
 }
 .box{
     text-align: center;
@@ -232,14 +230,14 @@ a.bntDownload:hover{
     row-gap: 20px;
     column-gap: 40px;
     height: 100%;
-    
-    grid-template-areas: 
+
+    grid-template-areas:
     "heading heading heading"
     "workyear1 work1 work1"
     "workyear2 work2 work2"
     "workyear3 work3 work3"
     "workyear4 work4 work4";
-    
+
 }
 .experience-section .work-year-a{
     grid-area: workyear1;
@@ -258,19 +256,19 @@ a.bntDownload:hover{
 }
 .experience-section .workDescription-a{
     grid-area: work1;
-    
+
 }
 .experience-section .workDescription-b{
     grid-area: work2;
-    
+
 }
 .experience-section .workDescription-c{
     grid-area: work3;
-    
+
 }
 .experience-section .workDescription-d{
     grid-area: work4;
-    
+
 }
 .experience-section{
     height: 100%;
@@ -315,7 +313,7 @@ a.bntDownload:hover{
 }
 
 .workDescription p{
-    
+
     padding: 0 15px;
     margin-top:10px;
     color:#5f656b;
@@ -335,7 +333,7 @@ a.bntDownload:hover{
     text-align: center;
     font-size: 17px;
     color:white;
-    padding: 40px 0 40px 0;
+    padding: 20px 0 40px 0;
 }
 /*EXPERIENCE SECTION END*/
 /*EDUCATION SECTION START*/
@@ -344,8 +342,8 @@ a.bntDownload:hover{
     row-gap: 20px;
     column-gap: 40px;
     height: 100%;
-    
-    grid-template-areas: 
+
+    grid-template-areas:
     "heading heading heading"
     "schoolyear1 school1 school1"
     "schoolyear2 school2 school2"
@@ -424,7 +422,7 @@ a.bntDownload:hover{
     text-align: center;
     font-size: 17px;
     color:white;
-    padding: 40px 0 40px 0;
+    padding: 20px 0 40px 0;
 }
 
 /* EDUCATION SECTION END*/
@@ -433,7 +431,7 @@ a.bntDownload:hover{
 .portfolio-section .gallery-set .content{
     display: grid;
     gap:20px;
-    
+
     grid-template-columns: repeat(5,1fr);
 }
 .portfolio-section img{
@@ -454,7 +452,7 @@ a.bntDownload:hover{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    
+
 }
 .portfolioFilter .selected a{
     /*background-color: #262b37;
@@ -474,7 +472,7 @@ a.bntDownload:hover{
 }
 .portfolioFilter a:hover{
     border:1px solid black;
-    
+
 }
 .portfolioFilter{
     padding-bottom: 20px;
@@ -518,13 +516,13 @@ a.bntDownload:hover{
     display: grid;
     column-gap: 50px;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
+    grid-template-areas:
     "heading heading"
     "udaje formular";
 }
 .contact_details{
     grid-area: udaje;
-   
+
 }
 .formular{
     grid-area: formular;
@@ -546,7 +544,7 @@ a.bntDownload:hover{
 }
 .contactDetails a{
     color:#c3c8d6;
-    font-size: 22px; 
+    font-size: 22px;
 }
 .contactDetails a:hover{
     color:white;
@@ -616,14 +614,14 @@ footer{
     color:white;
     display: inline-block;
     margin: 0 6px;
-    
+
     text-align: center;
     border-radius: 50%;
 }
 .footer a{
     color:#00bdbd;
     text-align: center;
-    
+
 }
 .footer a:hover{
     color:white;
