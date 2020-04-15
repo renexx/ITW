@@ -11,42 +11,45 @@
 </head>
 <body>
         <!-- Header -->
-    <header id="cover" class="fadeCovers">
+    <header>
         
         <!--Navigation-->
             <nav class="menu main-nav">
                 <ul>
                     <li class="selected">
-                    <a href="#top" class="scroll">Home</a>
+                    <a href="#home" class="scroll"><i class="fa fa-home site-nav--icon"></i>Home</a>
                     </li>
                     <li>
-                    <a href="#aboutme" class="scroll">About</a>
+                    <a href="#aboutme" class="scroll"><i class="fa fa-info site-nav--icon"></i>About</a>
                     </li>
                     <li>
-                    <a href="#skill" class="scroll">Skills</a>
+                    <a href="#skill" class="scroll"><i class="fas fa-lightbulb site-nav--icon"></i>Skills</a>
                     </li>
                     <li>
-                    <a href="#experience" class="scroll">Experience</a>
+                    <a href="#experience" class="scroll"><i class="fas fa-briefcase site-nav--icon"></i>Experience</a>
                     </li>
                     <li>
-                        <a href="#education" class="scroll">Education</a>
+                        <a href="#education" class="scroll"><i class="fas fa-university site-nav--icon"></i>Education</a>
                     </li>
                     <li>
-                        <a href="#portfolio"class="scroll"> Portfolio</a>
+                        <a href="#portfolio"class="scroll"><i class="fas fa-envelope site-nav--icon"></i> Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact"class="scroll">contact</a>
+                        <a href="#contact"class="scroll"><i class="fas fa-phone site-nav--icon"></i>contact</a>
                     </li>
                 </ul>
             </nav>
         <div class="content" >
-            <div class="bannerText" id="top">
+            <div class="bannerText" id="home">
                 <div class="bannerBorder">
                     <h1>I´m Jason Parker</h1>
-                    <h2>Software developer</h2>
+                    <h2>Software and Web developer</h2>
                 </div>    
             </div>
-        </div>      
+        </div> 
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
     </header>
         
     <div class="wrapper">
@@ -130,24 +133,6 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
                         </div>
                     </div>
-                    <div class="otherskill">
-                        <h3>My other skills</h3>
-                        <div class="workflow">
-                            <ul>
-                                <li><i class="fas fa-check"></i>Agile Development & Scrum</li>
-                                <li><i class="fas fa-check"></i>Mobile first, responsive Design</li>
-                                <li><i class="fas fa-check"></i>Cross Browser Testing & Debugging</li>
-                                <li><i class="fas fa-check"></i>Cross Functional Teams</li>
-                            </ul>
-                        </div> 
-                        <div class="language">
-                            <ul>
-                                <li><i class="fas fa-check"></i>English - Native speaker</li>
-                                <li><i class="fas fa-check"></i>German - profesional</li>
-                                <li><i class="fas fa-check"></i>Spain - intermedial</li>
-                            </ul>
-                        </div>
-                    </div> 
                 </div>    
             </section>
              <!--Skills section end-->
@@ -237,9 +222,10 @@
                       <li class="selected"><a href="#all">All</a></li>
                       <li><a href="#photos">Photos</a></li>
                       <li><a href="#branding" >Branding</a></li>
-                      <li><a href="#illustratuib" >Illustration</a></li>
+                      <li><a href="#illustration" >Illustration</a></li>
+                      <li><a href="#testimonials" >Testimonials</a></li>
                     </ul>
-                  </div>
+                </div>
                 <div class="gallery-set" id="all">
                     <div class="content">
                         <img src="img/picture1.jpg" alt="">
@@ -256,31 +242,72 @@
                 </div>  
                 <div class="gallery-set" id="photos">
                     <div class="content">
-                        <img src="img/picture1.jpg" alt="">
-                        <img src="img/picture3.jpg" alt="">
-                        <img src="img/picture4.jpg" alt="">
-                        <img src="img/picture6.jpg" alt="">
+                        <div class="photobox">
+                            <img src="img/picture1.jpg" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div>   
+                        <div class="photobox">
+                            <img src="img/picture3.jpg" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div>
+                        <div class="photobox">   
+                            <img src="img/picture4.jpg" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div>    
                      </div>   
                 </div> 
                 <div class="gallery-set" id="branding">
                     <div class="content">
-                        <img src="https://source.unsplash.com/random/201x200" alt="">
-                        <img src="https://source.unsplash.com/random/202x200" alt="">
-                        <img src="https://source.unsplash.com/random/203x200" alt="">
-                        <img src="https://source.unsplash.com/random/204x200" alt="">
-                        <img src="https://source.unsplash.com/random/205x200" alt="">
+                        <div class="photobox">
+                            <img src="https://source.unsplash.com/random/201x200" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div>   
+                        <div class="photobox">
+                            <img src="https://source.unsplash.com/random/202x200" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div> 
+                        <div class="photobox">
+                            <img src="https://source.unsplash.com/random/203x200" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div> 
+
                      </div>   
                 </div> 
                 <div class="gallery-set" id="illustration">
                     <div class="content">
-                        <img src="https://source.unsplash.com/random/201x201" alt="">
-                        <img src="https://source.unsplash.com/random/202x202" alt="">
-                        <img src="https://source.unsplash.com/random/203x203" alt="">
-                        <img src="https://source.unsplash.com/random/204x204" alt="">
-                        <img src="https://source.unsplash.com/random/205x205" alt="">
+                        <div class="photobox">
+                            <img src="https://source.unsplash.com/random/204x200" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div> 
+                        <div class="photobox">
+                            <img src="https://source.unsplash.com/random/205x200" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div> 
+                        <div class="photobox">
+                            <img src="https://source.unsplash.com/random/206x200" alt="">
+                            <h3>Laravel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                        </div> 
                      </div>   
                 </div> 
               </section>
+              
+                <div class="testimonialsection" id="testimonials">
+                    <div class="photobox">
+                       
+                        <h3>Laravel</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+                    </div> 
+                </div>
+             
              <!--Portfolio section end-->
              <!--Contact section start-->
             <section class="contact-section" id="contact">
