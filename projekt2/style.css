@@ -127,7 +127,6 @@ header{
 .aboutme-container .content{
     display: grid;
     gap:20px;
-
     grid-template-areas:
     "about about about"
     "textabout textabout fotka"
@@ -905,8 +904,6 @@ footer{
 }
   .portfolio-section .gallery-set .content{
     grid-template-columns: 1fr 1fr;
-    
-   
 }
 .portfolio-section img{
     width: auto;
